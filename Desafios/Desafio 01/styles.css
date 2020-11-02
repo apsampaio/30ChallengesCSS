@@ -1,0 +1,47 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.cards {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  transform: rotate(-30deg) skew(25deg) scale(0.5);
+  margin-left: 150px;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card img {
+  position: absolute;
+
+  transition: 0.5s;
+
+  width: 180px;
+  height: 180px;
+}
+
+.card:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+}
+.card:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+.card:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+.card:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
